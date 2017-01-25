@@ -9,30 +9,30 @@ Die Installation von Apache Maven ist einfach zu realisieren. Zuerst muss das en
 * [Maven-3.3.9](http://mirrors.ae-online.de/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip)
 
 **Steps:**
-1. Sicherstellen, dass `JAVA_HOME` Systemvariable gesetzt ist und auf die entsprechende JDK-installation zeigt
+* Sicherstellen, dass `JAVA_HOME` Systemvariable gesetzt ist und auf die entsprechende JDK-installation zeigt
   * Starten der Kommandozeile mit Windows + R then type `cmd`
 ```
 echo $JAVA_HOME
 ```
   * Der Ausgabepfad sollte ähnlich wie `C:\Program Files\Java\jdk1.7.0_79` sein.
 
-2. Das Maven-Archiv in einem beliebigen Ordner extrahieren.
+*  Das Maven-Archiv in einem beliebigen Ordner extrahieren.
 ```
 unzip apache-maven-3.3.9-bin.zip
 ```
 
-3. Maven-Pfad zur Systemvariable `PATH` hinzufügen
-  1. Windows System-Einstellungen öffnen (Windows + Pause)
-  2. `Erweiterte Einstellungen` auswählen
-  3. `Umgebungsvariablen` öffnen
-  4. Pfad `...\apache-maven-3.3.9\bin` zu PATH hinzufügen
-4. Prüfen, ob Installation erfolgreich
-  1. Öffnen der Kommandozeile (Windows + R)
+* Maven-Pfad zur Systemvariable `PATH` hinzufügen
+  * Windows System-Einstellungen öffnen (Windows + Pause)
+  * `Erweiterte Einstellungen` auswählen
+  * `Umgebungsvariablen` öffnen
+  * Pfad `...\apache-maven-3.3.9\bin` zu PATH hinzufügen
+* Prüfen, ob Installation erfolgreich
+  * Öffnen der Kommandozeile (Windows + R)
 ```
 mvn -v
 ```
 
-  2. Die Ausgabe sollte ähnlich wie Folgende aussehen.
+  * Die Ausgabe sollte ähnlich wie Folgende aussehen.
 
 ```
 Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T17:41:4
