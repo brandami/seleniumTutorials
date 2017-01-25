@@ -5,12 +5,12 @@ Git-Repository zur Sammlung verschiedener Selenium-Tutorials.
 
 Die Installation von Apache Maven ist einfach zu realisieren. Zuerst muss das entsprechende Maven-Archiv heruntergelanden und entpackt werden. Anschließend muss noch der Pfad zum Ordner `bin` zur Systemvariable `PATH` hinzugefügt werden und schon ist Maven installiert.
 
-** Download: **
+**Download:**
 * [Maven-3.3.9](http://mirrors.ae-online.de/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip)
 
-** Steps: **
-1. Sicherstellen, dass JAVA_HOME Systemvariable gesetzt ist und auf die entsprechende JDK-installation zeigt
-  1. Starten der Kommandozeile mit Windows + R then type cmd
+**Steps:**
+1. Sicherstellen, dass `JAVA_HOME` Systemvariable gesetzt ist und auf die entsprechende JDK-installation zeigt
+  1. Starten der Kommandozeile mit Windows + R then type `cmd`
 ```
 echo $JAVA_HOME
 ```
@@ -28,8 +28,9 @@ unzip apache-maven-3.3.9-bin.zip
   1. Öffnen der Kommandozeile (Windows + R)
 ```
 mvn -v
-  2. Die Ausgabe sollte ähnlich wie Folgende aussehen.
 ```
+  2. Die Ausgabe sollte ähnlich wie Folgende aussehen.
+
 ```
 Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T17:41:4
 7+01:00)
