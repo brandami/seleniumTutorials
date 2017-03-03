@@ -8,16 +8,16 @@
  * Vorraussetzungen zur Nutzung von Selenium
 3. Installation (mglw. Werbe-USB-Srick für jeden Teilnehmer mit benötigter Software und Beispielprojekten bereitstellen)
  * Links zum Download (nur für Unterlagen, Applikationen sollten nach Möglichkeit bereits auf Stick vorliegen)
-  * Selenium Server
-  * Selenium Driver
-  * Java JDK 8
-  * MAVEN
-  * etc...
+   * Selenium Server
+   * Selenium Driver
+   * Java JDK 8
+   * MAVEN
+   * etc...
 4. Erstellen eines Testprojekts
  * Anlegen eines Java-Projekt
-  * Erstellen eines Beispiel-Testfalls
+   * Erstellen eines Beispiel-Testfalls
  * Anlegen eines Maven-Projektes 
-  * Erstellen einer Beispiel-Testfalls
+   * Erstellen einer Beispiel-Testfalls
 5. Ausblick auf Woche 2 – Lokatoren und Page-Objekte
 # Woche 2 – Lokatoren und Page-Objekte
 1. Vorstellung der AuT
@@ -25,8 +25,8 @@
  * Warum diese Applikation?
  * Erstellen eines neuen Maven-Projekts
  * Erstellen und Ausführen einiger einfacher Testfälle
-  * Unterschied zwischen get() und navigate()
-  * Einführung einfacher Lokatoren
+   * Unterschied zwischen get() und navigate()
+   * Einführung einfacher Lokatoren
 2. Nutzung von Lokatoren in Selenium
  * HTML-Grundlagen
  * CSS-Grundlagen
