@@ -1,11 +1,11 @@
 # Woche 1 – Einführung
 1. Überblick
-..* Was haben wir während des Workshops vor?
-..* Ziel des Workshops
+ * Was haben wir während des Workshops vor?
+ * Ziel des Workshops
 2. Einführung in Selenium
-..* Warum Testautomatisierung?
-..* Was ist Selenium?
-..* Vorraussetzungen zur Nutzung von Selenium
+ * Warum Testautomatisierung?
+ * Was ist Selenium?
+ * Vorraussetzungen zur Nutzung von Selenium
 3. Installation (mglw. Werbe-USB-Srick für jeden Teilnehmer mit benötigter Software und Beispielprojekten bereitstellen)
 ..* Links zum Download (nur für Unterlagen, Applikationen sollten nach Möglichkeit bereits auf Stick vorliegen)
 ....* Selenium Server
