@@ -19,6 +19,7 @@
  * Anlegen eines Maven-Projektes 
    * Erstellen einer Beispiel-Testfalls
 5. Ausblick auf Woche 2 – Lokatoren und Page-Objekte
+
 # Woche 2 – Lokatoren und Page-Objekte
 1. Vorstellung der AuT
  * Welche Applikation?
@@ -37,6 +38,7 @@
  * Auslagerung der Lokatoren in Page-Objekte
  * Ansteuerung der Lokatoren über Page-Objekte
 4. Ausblick Woche 3 – ?Auslagerung von Testmethoden?
+
 # Woche 3 – Auslagerung von Testmethoden
 1. Lokatoren 2
 2. Strukturierung von Page-Objekten
@@ -44,6 +46,7 @@
 3. Strukturierung von Testfällen
  * JUNIT-Testcases
  * Abstrakte Testmethoden 
+ 
 # Woche 4 – Browser
 1. Ansteuerung unterschiedlicher Browser
 2. Auslagerung der Browser-Konfiguration in eigene Klasse
@@ -51,8 +54,11 @@
  * simulieren von mobilen Geräten
 4. Third Party Browser 
 5. Remote Control
+
 # Woche 5 Reporting
+
 # Woche 6 Exceptions
+
 # Woche 7 spezielle Funktionen und Events
 1. Anbindung von Datenbanken
 2. Handling von Autocomplete
