@@ -20,7 +20,7 @@ abstract class SeleniumBaseSpec {
 		case "firefox":
 			System.out.println("launching firefox browser");
 			System.setProperty("webdriver.gecko.driver", "./ressources/geckodriver.exe");
-			return firefoxDriver();
+			return new FirefoxDriver(new FirefoxSettings().capabilities);
 		case "chrome":
 			System.out.println("launching chrome browser");
 			System.setProperty("webdriver.chrome.driver", "./ressources/chromedriver.exe");
@@ -44,10 +44,10 @@ abstract class SeleniumBaseSpec {
 		return driver;
 	}
 	
-	private FirefoxDriver firefoxDriver() {
-		final DesiredCapabilities dCaps = new FirefoxSettings().capabilities;
-		return new FirefoxDriver(dCaps);
-	}
+//	private FirefoxDriver firefoxDriver() {
+//		final DesiredCapabilities dCaps = new FirefoxSettings().capabilities;
+//		return new FirefoxDriver(dCaps);
+//	}
 	
 	private ChromeDriver chromeDriver() {
 		final DesiredCapabilities dCaps = new ChromeSettings().capabilities;
