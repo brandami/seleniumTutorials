@@ -1,0 +1,229 @@
+
+/* ***** BASICS ***** */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    background-color: #ddd;
+}
+
+a {
+    color: #00315D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A40531;
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: 0px 1px 2px #888;
+}
+
+label {
+    display: block;
+    padding-right: 10px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 480px) {
+    label {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+input,
+select,
+button {
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+    border: 1px solid #00315D;
+}
+
+button {
+    background-color: #ddd;
+}
+
+form [class*="col-"] {
+    background-color: transparent;
+    border: none;
+}
+
+form .row:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* ***** LAYOUT ***** */
+
+/* *** Basics *** */
+
+#wrapper {
+    min-width: 480px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    padding: 10px;
+}
+
+/* *** Header *** */
+
+header {
+}
+
+header .menu {
+    float: left;
+    margin-right: 12px;
+}
+
+header h1 {
+    line-height: 44px;
+}
+
+header nav {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+/* *** Main *** */
+
+main {
+    clear: both;
+    margin: 0 -10000px;
+    padding: 10px 10010px;
+    background-color: #fff;
+}
+
+main h1:not(:first-child),
+main h2:not(:first-child),
+main h3:not(:first-child) {
+    margin-top: 20px;
+}
+
+main h1:not(:last-child),
+main h2:not(:last-child),
+main h3:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+main h1,
+main h2,
+main h3 {
+    position: relative;
+    border-bottom: 4px solid #ddd;
+}
+
+main h1:after,
+main h2:after,
+main h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 344px;
+    height: 4px;
+    background-image: url(../img/logo.png);
+}
+
+main hr {
+    margin: 10px 0;
+    position: relative;
+    border: none;
+    border-bottom: 4px solid #ddd;
+}
+
+main hr:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 344px;
+    height: 4px;
+    background-image: url(../img/logo.png);
+}
+
+main ul {
+    margin-left: 30px;
+}
+
+/* *** Footer *** */
+
+footer {
+}
+
+/* ***** RESPONSIVE ***** */
+
+@media only screen and (min-width: 690px) {
+
+    header .logo {
+        float: left;
+        margin-right: 16px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header nav {
+        display: block !important;
+    }
+
+    header nav li {
+        float: left;
+        margin-right: 10px;
+    }
+
+    header nav li:not(:first-child):before {
+        content: "|";
+        margin-right: 10px;
+    }
+
+}
+
+/* ***** FONTS ***** */
+
+@font-face {
+    font-family: 'Dosis';
+    font-weight: normal;
+    src:  url('../font/Dosis-Regular.woff2') format('woff2'),
+          url('../font/Dosis-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dosis';
+    font-weight: bold;
+    src:  url('../font/Dosis-SemiBold.woff2') format('woff2'),
+          url('../font/Dosis-SemiBold.woff') format('woff');
+}
+
+/* ***** HELPER CLASSES ***** */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
