@@ -27,7 +27,7 @@ public class HomePage {
 	private WebElement kontakt;
 
 	public KontaktPage openContactPage() {
-
+		kontakt.click();
 		return new KontaktPage();
 	}
 }
