@@ -34,9 +34,9 @@ abstract class SeleniumBaseSpec {
 			System.setProperty("webdriver.edge.driver", "./ressources/MicrosoftWebDriver.exe");
 			driver = edgeDriver();
 		default:
-			System.out.println("launching (default) firefox browser");
-			System.setProperty("webdriver.gecko.driver", "./ressources/geckodriver.exe");
-			driver = new FirefoxDriver();
+			System.out.println("launching (default) chrome browser");
+			System.setProperty("webdriver.chrome.driver", "./ressources/chromedriver.exe");
+			driver = new ChromeDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);

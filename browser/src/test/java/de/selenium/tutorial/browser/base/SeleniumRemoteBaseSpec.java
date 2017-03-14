@@ -36,8 +36,8 @@ abstract class SeleniumRemoteBaseSpec {
             	System.out.println("Opening edge driver");
             	return new EdgeSettings().capabilities;
             default:
-                System.out.println("browser : " + useBrowser + " is invalid, Launching Firefox as browser of choice..");
-                return DesiredCapabilities.firefox();
+                System.out.println("browser : " + useBrowser + " is invalid, Launching Chrome as browser of choice..");
+                return DesiredCapabilities.chrome();
         }
     }
 
