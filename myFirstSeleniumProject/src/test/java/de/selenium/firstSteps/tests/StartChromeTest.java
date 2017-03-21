@@ -2,6 +2,8 @@ package test.java.de.selenium.firstSteps.tests;
 
 import static org.junit.Assert.fail;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,8 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class StartChromeTest {
 
-	static String driverPath = "./ressources/chromedriver.exe";
-	public WebDriver driver;
+	private static String driverPath = "./ressources/chromedriver.exe";
+	public static WebDriver driver;
 	
 	/**
 	 * @BeforeClass bedeutet, dass diese Methode einmalig vor allen Tests dieser Klasse ausgeführt wird.
@@ -23,27 +25,26 @@ public class StartChromeTest {
 	 * @throws Exception
 	 */
 	@BeforeClass
-	public void setUp() throws Exception {
+	public static void setUp(){
 		System.out.println("*******************");
 		System.out.println("launching chrome browser");
 		// System properties für Firefox
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
+		//Browser maximieren
 		driver.manage().window().maximize();
+		//Sync-Timeout setzen
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	}
 	
 	@AfterClass
-	public void tearDown() throws Exception {
-		driver.close();
+	public static void tearDown() {
+		//Browser schließen
+		driver.quit();
 	}
 
 	@Test
-	public void test1() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void test2() {
+	public void test() {
 		fail("Not yet implemented");
 	}
 
