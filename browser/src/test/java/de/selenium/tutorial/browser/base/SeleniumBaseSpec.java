@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-abstract class SeleniumBaseSpec {
+public abstract class SeleniumBaseSpec {
 	protected static final long DEFAULT_TIMEOUT = 30;
 	protected WebDriver driver;
 	private String useBrowser;
@@ -20,11 +20,11 @@ abstract class SeleniumBaseSpec {
 		case "firefox":
 			System.out.println("launching firefox browser");
 			System.setProperty("webdriver.gecko.driver", "./ressources/geckodriver.exe");
-			return new FirefoxDriver(new FirefoxSettings().capabilities);
+			driver = new FirefoxDriver(new FirefoxSettings().capabilities);
 		case "chrome":
 			System.out.println("launching chrome browser");
 			System.setProperty("webdriver.chrome.driver", "./ressources/chromedriver.exe");
-			return chromeDriver();
+			driver = chromeDriver();
 		case "internet explorer":
 			System.out.println("launching IE browser");
 			System.setProperty("webdriver.ie.driver", "./ressources/IEDriverServer.exe");
