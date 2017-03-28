@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>outsourcing</name>
+	<name>myFirstSeleniumProjectWithMaven</name>
 	<comment></comment>
 	<projects>
+		<project>myFirstSeleniumProject</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
