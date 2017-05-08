@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Demo suite 1]">
+  <test name="Demo test 1(failed)">
+    <classes>
+      <class name="com.spirit.testing.selenium.testng.SeleniumWebdriverTest">
+        <methods>
+          <include name="functionToFail"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.spirit.testing.selenium.testng.SeleniumWebdriverTest -->
+    </classes>
+  </test> <!-- Demo test 1(failed) -->
+</suite> <!-- Failed suite [Demo suite 1] -->
