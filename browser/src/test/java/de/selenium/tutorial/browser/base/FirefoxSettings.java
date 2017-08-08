@@ -30,7 +30,8 @@ public class FirefoxSettings {
 		dCaps.setPlatform(Platform.getCurrent());
         dCaps.setCapability(FirefoxDriver.PROFILE, createFirefoxProfile());
         dCaps.setCapability(CapabilityType.SUPPORTS_ALERTS, true);
-        dCaps.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "IGNORE");
+        // doesn't work with Firefox53+
+//        dCaps.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "IGNORE");
         dCaps.setCapability(CapabilityType.SUPPORTS_FINDING_BY_CSS, true);
         dCaps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		return dCaps;

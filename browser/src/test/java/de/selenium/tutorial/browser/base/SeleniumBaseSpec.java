@@ -26,22 +26,27 @@ public abstract class SeleniumBaseSpec {
 			System.out.println("launching firefox browser");
 			System.setProperty("webdriver.gecko.driver", "./ressources/geckodriver.exe");
 			driver = new FirefoxDriver(new FirefoxSettings().capabilities);
+			break;
 		case "chrome":
 			System.out.println("launching chrome browser");
 			System.setProperty("webdriver.chrome.driver", "./ressources/chromedriver.exe");
 			driver = chromeDriver();
+			break;
 		case "internet explorer":
 			System.out.println("launching IE browser");
 			System.setProperty("webdriver.ie.driver", "./ressources/IEDriverServer.exe");
 			driver = ieDriver();
+			break;
 		case "edge":
 			System.out.println("launching Microsoft Edge browser");
 			System.setProperty("webdriver.edge.driver", "./ressources/MicrosoftWebDriver.exe");
 			driver = edgeDriver();
+			break;
 		default:
 			System.out.println("launching (default) chrome browser");
 			System.setProperty("webdriver.chrome.driver", "./ressources/chromedriver.exe");
 			driver = new ChromeDriver();
+			break;
 		}
 		driver.manage().timeouts().implicitlyWait(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
@@ -49,11 +54,11 @@ public abstract class SeleniumBaseSpec {
 		return driver;
 	}
 
-	public void report(String testcase) {
+	public void report(String testcaseName) {
 		String path;
 		try{
             File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            path = ".target/screenshots/" + testcase + source.getName();
+            path = ".target/screenshots/" + testcaseName + source.getName();
             FileUtils.copyFile(source, new File(path));
 		} catch(IOException e) {
 			System.out.println("Failed to capture screenshot: " + e.getStackTrace());

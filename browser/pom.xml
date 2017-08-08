@@ -10,7 +10,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   	<version.junit>4.12</version.junit>
-    <version.selenium>3.0.1</version.selenium>
+    <version.selenium>3.4.0</version.selenium>
   </properties>
   <dependencies>
     <dependency>

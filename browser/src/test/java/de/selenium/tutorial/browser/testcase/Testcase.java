@@ -20,7 +20,7 @@ public class Testcase extends SeleniumBaseSpec {
 		driver.manage().window().maximize();
 		driver.get("https://www.google.de");
 		Assert.assertEquals("Google", driver.getTitle());
-		driver.close();
+		driver.quit();
 	}
 
 	@Test
@@ -55,5 +55,7 @@ public class Testcase extends SeleniumBaseSpec {
 		Assert.assertEquals("Google", driver.getTitle());
 		report(name.getMethodName());
 		driver.close();
+
 	}
+
 }
